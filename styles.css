@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  .comments-container {
+    max-width: 90%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .comments-list {
+    margin-top: 20px;
+  }
+  
+  .comment {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    word-wrap: break-word;
+  }
+  
+  .comment.reply {
+    background-color: #e5e5e5;
+    margin-left: 20px;
+    margin-left: 20px;
+    word-wrap: break-word;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Если недостаточно места для кнопок */
+  }
+  
+  button {
+    flex-basis: 48%; /* Равномерное распределение места для кнопок */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.clear-button {
+    background-color: #dc3545;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    resize: vertical;
+    box-sizing: border-box; /* Включаем padding в расчет ширины */
+  }
+  
